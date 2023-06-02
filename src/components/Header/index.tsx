@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import header from "./index.module.scss";
-import logo from "@public/logo-1.png";
+import logo from "@public/rongqi-logo_1x.png";
 import dynamic from "next/dynamic";
 
 const Menus = () => {
