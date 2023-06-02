@@ -1,0 +1,10 @@
+@keyframes menu-bottom-line-in {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+$menu-line: menu-bottom-line-in 0.25s linear alternate;

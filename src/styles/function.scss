@@ -1,0 +1,4 @@
+@function setVarName($type) {
+  $name: "--color-" + $type;
+  @return $name;
+}

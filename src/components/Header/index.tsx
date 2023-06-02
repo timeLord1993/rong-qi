@@ -33,6 +33,14 @@ const Menus = () => {
   );
 };
 
+const Search = () => {
+  return (
+    <>
+      <input className={header.search} placeholder="请输入搜索内容" />
+    </>
+  );
+};
+
 const Header = () => {
   const Me = dynamic(() => import("@icon-park/react").then((i) => i.Me), {
     ssr: true,
@@ -49,6 +57,9 @@ const Header = () => {
         </div>
         <div className={header["menu-box"]}>
           <Menus />
+        </div>
+        <div className={header["search-box"]}>
+          <Search />
         </div>
         <div className={header["control-box"]}>
           <Me theme="outline" size="24" fill="#333" />

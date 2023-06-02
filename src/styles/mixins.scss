@@ -1,0 +1,9 @@
+@use "sass:map";
+
+@use "./function.scss" as *;
+
+@mixin set-css-color-type($colors, $types) {
+  @each $type in $types {
+    #{"--color-" + $type}: #{map.get($colors, $type, "base")};
+  }
+}

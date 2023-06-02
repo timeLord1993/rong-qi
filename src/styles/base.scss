@@ -1,0 +1,7 @@
+@use "./mixins.scss" as *;
+@use "./var.scss" as *;
+
+:root {
+  --border-base-radius: 20px;
+  @include set-css-color-type($colors, $types);
+}
