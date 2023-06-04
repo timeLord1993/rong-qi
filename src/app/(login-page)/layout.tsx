@@ -1,6 +1,5 @@
-import "./globals.css";
+import "../globals.css";
 import { Inter } from "next/font/google";
-import Header from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,7 +8,7 @@ export const metadata = {
   description: "容器",
 };
 
-export default function RootLayout({
+export default function LoginLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -17,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
         <div>{children}</div>
       </body>
     </html>

@@ -1,6 +1,6 @@
 @use "sass:map";
 
-$types: primary, warning, danger, error, info;
+$types: primary, success, warning, danger, error, info;
 
 // $colors: () !default;
 $colors: map.deep-merge(
@@ -8,13 +8,13 @@ $colors: map.deep-merge(
     "white": "#ffffff",
     "black": "#000000",
     "primary": (
-      "base": #0000a8,
+      "base": #5600c1,
     ),
     "success": (
-      "base": #24b88f,
+      "base": #0bdba0,
     ),
     "warning": (
-      "base": #f1863f,
+      "base": #ee6f1b,
     ),
     "danger": (
       "base": #ff4141,

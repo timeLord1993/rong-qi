@@ -3,5 +3,7 @@
 
 :root {
   --border-base-radius: 20px;
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
   @include set-css-color-type($colors, $types);
 }

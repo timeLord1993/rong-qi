@@ -1,9 +1,10 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import header from "./index.module.scss";
 import logo from "@public/rongqi-logo_1x.png";
 import dynamic from "next/dynamic";
+import React from "react";
 
 const Menus = () => {
   const menus = [
@@ -41,6 +42,14 @@ const Search = () => {
   );
 };
 
+const Login = () => {
+  return (
+    <>
+      <button className={header.login}>登录/注册</button>
+    </>
+  );
+};
+
 const Header = () => {
   const Me = dynamic(() => import("@icon-park/react").then((i) => i.Me), {
     ssr: true,
@@ -62,7 +71,8 @@ const Header = () => {
           <Search />
         </div>
         <div className={header["control-box"]}>
-          <Me theme="outline" size="24" fill="#333" />
+          <Login />
+          {/* <Me theme="outline" size="24" fill="#333" /> */}
         </div>
       </header>
     </>
