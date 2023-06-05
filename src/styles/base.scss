@@ -2,7 +2,7 @@
 @use "./var.scss" as *;
 
 :root {
-  --border-base-radius: 20px;
+  --border-base-radius: 6px;
   --color-white: #{$color-white};
   --color-black: #{$color-black};
   @include set-css-color-type($colors, $types);

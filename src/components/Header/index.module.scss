@@ -28,8 +28,7 @@
     cursor: pointer;
     color: rgb(0, 0, 0);
     font-weight: 400;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -45,7 +44,7 @@
     color: var(--color-primary);
     transition: all 0.25s linear;
     font-style: normal;
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-shadow: var(--color-primary) 0.05em 0.05em 0.2em;
     &::after {
       content: "";
@@ -96,12 +95,10 @@
 }
 
 .login {
-  width: 100px;
-  height: 34px;
   background-color: var(--color-success);
-  outline: none;
   border-radius: var(--border-base-radius);
-  font-weight: 800;
-  font-size: 14px;
   color: var(--color-white);
+  outline: none;
+  font-size: 12px;
+  padding: 4px 8px;
 }
